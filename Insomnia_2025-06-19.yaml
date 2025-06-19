@@ -1,0 +1,400 @@
+type: collection.insomnia.rest/5.0
+name: My first collection
+meta:
+  id: wrk_3f4ba6f80387462ab6f4f332c38668c7
+  created: 1750314219806
+  modified: 1750314219806
+  description: ""
+collection:
+  - name: ApiProducts
+    meta:
+      id: fld_eb2ab44a5a5f4d719d7f27b2eaabdff8
+      created: 1750314280646
+      modified: 1750314280646
+      sortKey: -1750314260842
+      description: ""
+    children:
+      - url: "{{base_url}}/products"
+        name: Products
+        meta:
+          id: req_7fca452043cf4af48c1093cbe5c60084
+          created: 1750314280651
+          modified: 1750314382984
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260841
+        method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/products"
+        name: Products
+        meta:
+          id: req_4f1cac2b705647fe9e487697659799ee
+          created: 1750314280663
+          modified: 1750314280663
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260840
+        method: POST
+        body:
+          mimeType: application/json
+          text: "{\r
+
+            \  \"name\": \"Producto C\",\r
+
+            \  \"description\": \"Descripción del producto C\",\r
+
+            \  \"price\": 452.50,\r
+
+            \  \"currency_id\": 2,\r
+
+            \  \"tax_cost\": 20.00,\r
+
+            \  \"manufacturing_cost\": 30.00\r
+
+            }"
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/products/3"
+        name: Product By Id
+        meta:
+          id: req_af53757a12cf44398d0eec97cc76630b
+          created: 1750314280665
+          modified: 1750314280665
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260839
+        method: GET
+        body:
+          mimeType: text/plain
+          text: "{\r
+
+            \  \"name\": \"Producto A\",\r
+
+            \  \"description\": \"Descripción del producto A\",\r
+
+            \  \"price\": 150.50,\r
+
+            \  \"currency_id\": 13,\r
+
+            \  \"tax_cost\": 15.00,\r
+
+            \  \"manufacturing_cost\": 30.00\r
+
+            }"
+        headers:
+          - name: Content-Type
+            value: text/plain
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/products/2"
+        name: Product By Id
+        meta:
+          id: req_49e7d5b11aae40aebfcee999f7da71f6
+          created: 1750314280667
+          modified: 1750314592346
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260838
+        method: PUT
+        body:
+          mimeType: application/json
+          text: "{\r
+
+            \  \"name\": \"Producto A modified\",\r
+
+            \  \"description\": \"Descripción del producto A modified\",\r
+
+            \  \"price\": 154.50,\r
+
+            \  \"currency_id\": 2,\r
+
+            \  \"tax_cost\": 145.00,\r
+
+            \  \"manufacturing_cost\": 32.00\r
+
+            }"
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/products/5"
+        name: Product By Id
+        meta:
+          id: req_7cb67f8d3a6d4b07acd328883de9cf69
+          created: 1750314280670
+          modified: 1750314598683
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260837
+        method: DELETE
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/products/3/prices"
+        name: ProductPrice
+        meta:
+          id: req_f599115780c9423dbb5826677d72a3a4
+          created: 1750314280672
+          modified: 1750314280672
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260836
+        method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/products/3/prices"
+        name: ProductPrice
+        meta:
+          id: req_5335aec3473c45fbba4b3de6f0a3522b
+          created: 1750314280674
+          modified: 1750314280674
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260835
+        method: POST
+        body:
+          mimeType: application/json
+          text: "{\r
+
+            \  \"currency_id\": 2,\r
+
+            \  \"price\": 120.00\r
+
+            }"
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/currencies"
+        name: Currencies
+        meta:
+          id: req_f531e679d1024209b71981466dbc1c59
+          created: 1750314280676
+          modified: 1750314280676
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260834
+        method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/currencies"
+        name: Currency
+        meta:
+          id: req_c9400c3a80c944d49e0118edc0d17e03
+          created: 1750314280679
+          modified: 1750314280679
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260833
+        method: POST
+        body:
+          mimeType: application/json
+          text: "{\r
+
+            \  \"name\": \"Dolar\",\r
+
+            \  \"symbol\": \"USD\",\r
+
+            \  \"exchange_rate\": 4000\r
+
+            }"
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/currencies/3"
+        name: Currencie By Id
+        meta:
+          id: req_84cb0055d21444289687836c0cb3bd35
+          created: 1750314280681
+          modified: 1750314280681
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260832
+        method: GET
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/currencies/3"
+        name: Currencie By Id
+        meta:
+          id: req_112a41a9750e4e2897f269f2cd6cb2cd
+          created: 1750314280683
+          modified: 1750314280683
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260831
+        method: PUT
+        body:
+          mimeType: application/json
+          text: "{\r
+
+            \  \"name\": \"Dolar\",\r
+
+            \  \"symbol\": \"USD\",\r
+
+            \  \"exchange_rate\": 4100\r
+
+            }"
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/currencies/3"
+        name: Currencie By Id
+        meta:
+          id: req_c94296bc821442fe8d551267de72919a
+          created: 1750314280686
+          modified: 1750314280686
+          isPrivate: false
+          description: ""
+          sortKey: -1750314260830
+        method: DELETE
+        body:
+          mimeType: text/plain
+          text: "{\r
+
+            \  \"name\": \"Dolar\",\r
+
+            \  \"symbol\": \"USD\",\r
+
+            \  \"exchange_rate\": 4100\r
+
+            }"
+        headers:
+          - name: Content-Type
+            value: text/plain
+        scripts:
+          preRequest: ""
+          afterResponse: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+    scripts:
+      afterResponse: ""
+      preRequest: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_31983cd6b64d97bd4019d9829412089d81ef7bff
+    created: 1750314219832
+    modified: 1750314219832
+environments:
+  name: Base Environment
+  meta:
+    id: env_31983cd6b64d97bd4019d9829412089d81ef7bff
+    created: 1750314219827
+    modified: 1750314530724
+    isPrivate: false
+  data:
+    base_url: http://localhost:8000/api
